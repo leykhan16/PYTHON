@@ -14,3 +14,25 @@ role = "i am a Rust and Python engineer"
 #print(info)
 info_with_fstring = f"My name is {name}, I'm {age} years old, and {role}"
 print(info_with_fstring)    
+
+# python primitive data types
+#string
+name = "xtrange"
+print(name)
+#integer
+age = 25
+print(age)
+#float
+height = 5.9
+print(height)
+#boolean
+is_student = True
+print(is_student)
+#type checking
+print(type(name))
+print(type(age))
+print(type(height))
+print(type(is_student))
+# using underscore for improved readability
+large_number = 1_000_000
+print(large_number)
