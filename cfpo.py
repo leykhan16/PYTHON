@@ -53,3 +53,49 @@ print(x < y)   # False
 print(x >= y)  # True
 # <=	Less than or equal to
 print(x <= y)  # True
+#conditional statements
+#if, elif, and else statements 
+score = 85
+if score >= 90:
+    print("Grade: A")
+elif score >= 80:
+    print("Grade: B")
+elif score >= 70:
+    print("Grade: C")
+elif score >= 60:
+    print("Grade: D")
+else:
+    print("Grade: F")
+#conditional staements using input function
+user_score = int(input("Enter your score: "))
+if user_score >= 90:
+    print("Grade: A")
+elif user_score >= 80:
+    print("Grade: B")
+elif user_score >= 70:
+    print("Grade: C")
+elif user_score >= 60:
+    print("Grade: D")
+else:
+    print("Grade: F")
+#logical operators
+# and, or, not
+is_raining = True
+is_cold = False
+if is_raining and is_cold:
+    print("It's raining and cold.")
+elif is_raining or is_cold:
+    print("It's either raining or cold.")
+else:    print("It's neither raining nor cold.")
+# toilet mangement system
+age = int(input("Enter your age: "))
+gender = input("Enter your gender (M/F): ")
+if age < 5:
+    print("Use the baby toilet.")
+elif age < 12:
+    if gender == "M":
+        print("Use the boys toilet.")
+    else:        print("Use the girls toilet.")
+else:
+    if gender == "M":
+        print("Use the men's toilet.")
