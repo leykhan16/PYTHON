@@ -36,3 +36,26 @@ print(type(is_student))
 # using underscore for improved readability
 large_number = 1_000_000
 print(large_number)
+
+#datatype conversion
+# converting string to integer
+age_str = "25"
+age_int = int(age_str)
+print(age_int)
+# converting integer to string
+age_str_again = str(age_int)
+print(age_str_again)
+# converting string to float
+height_str = "5.9"
+height_float = float(height_str)
+print(height_float)
+# converting float to string
+height_str_again = str(height_float)
+print(height_str_again)
+#converting boolean to string
+is_student_str = str(is_student)
+print(is_student_str)
+
+#python input function
+user_name = input("Enter your name: ")
+print(f"Hello, {user_name}!")
