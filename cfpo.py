@@ -99,3 +99,44 @@ elif age < 12:
 else:
     if gender == "M":
         print("Use the men's toilet.")
+#inverse of boolean values
+is_raining = True
+is_not_raining = not is_raining
+print(is_not_raining)  # False
+is_cold = False
+is_not_cold = not is_cold
+print(is_not_cold)  # True 
+#nested if else statements
+number = int(input("Enter a number: "))
+# creating conditional statement
+if number == 0:
+    print("The number is zero.")
+elif number < 0:
+    print("The number is negative.")
+else:    print("The number is positive.")
+
+# outer/top conditional statement
+user_response = input("are you hungry? (yes/no): ")
+if user_response == "yes":
+    print("Go to the grocery store.")
+    chocolate_price = float(input("how much is the chocolate? "))
+    if chocolate_price <= 5:
+        print("Buy the 3 chocolates.")
+    else:
+        print("Buy the 1 chocolate.")
+elif user_response == "no":
+    print("stay at home.")
+    fortnite = input("do you want to play fortnite? (yes/no): ")
+    if fortnite == "yes":  
+        print("see you next week.")
+    elif fortnite == "no":
+        print("go to study.")
+        subject = input("which subject do you want to study? (math/science/english): ")
+        if subject == "math":
+            print("study math.")
+        elif subject == "science":
+            print("we have nothing is common.")
+    else:
+        print("invalid response. please enter 'yes' or 'no'.")
+else:
+    print("Invalid response. Please enter 'yes' or 'no'.")
