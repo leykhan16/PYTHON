@@ -140,3 +140,11 @@ elif user_response == "no":
         print("invalid response. please enter 'yes' or 'no'.")
 else:
     print("Invalid response. Please enter 'yes' or 'no'.")
+# python ternary operator
+language = input("Enter your favorite programming language: ")
+if language == "Python":
+    print("You love Python!")
+    
+    skin_color = input("what is your skin color? (black/white/brown): ")
+    race = "black" if skin_color == "black" else "white" if skin_color == "white" else "brown"
+    print(f"Your race is {race}.")
