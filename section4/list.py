@@ -43,3 +43,27 @@ sequence = [True, "John", [56,78], "chris", [True, ["shadrach", "John",78], 90.6
 cart = ["Macbook", "airpod", "toilet paper", "baking powder"]
 # usig the dir function to see the available methods for list
 print(dir(cart))
+#'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort'
+#append() method
+cart.append("eggs")
+print(cart)  # ['Macbook', 'airpod', 'toilet paper', 'baking powder', 'eggs']
+cart.append("milk")
+print(cart)  # ['Macbook', 'airpod', 'toilet paper', 'baking powder', 'eggs', 'milk']
+#clear() method
+cart.clear()
+print(cart)  # []
+#copy() method
+new_cart = ["Macbook", "airpod", "toilet paper", "baking powder"]
+cart_copy = new_cart.copy()
+print(cart_copy)  # ['Macbook', 'airpod', 'toilet paper', 'baking powder']
+#count() method
+print(cart_copy.count("Macbook"))  # 1
+print(cart_copy.count("airpod"))   # 1
+#extend() method
+cart_copy.extend(["eggs", "milk"])
+print(cart_copy)  # ['Macbook', 'airpod', 'toilet paper',
+#it's important to note that the extend() method modifies the original list and does not return a new list. Therefore, it does not return anything (i.e., it returns None). If you try to print the result of cart_copy.extend(["eggs", "milk"]), it will print None because the method itself does not return a value. However, after calling extend(), the cart_copy list will be updated with the new items.
+#index() method
+print(cart_copy.index("toilet paper"))  # 2
+print(cart_copy.index("eggs"))          # 4
+#insert() method
