@@ -81,3 +81,13 @@ print(cart_copy)  # ['milk', 'eggs', 'baking powder', 'toilet paper', 'hand sani
 #sort() method
 cart_copy.sort()
 print(cart_copy)  # ['Macbook', 'airpod', 'baking powder', 'eggs', 'hand sanitizer', 'milk', 'toilet paper']
+
+#python nested list
+sequence = [True, "John", [56,78], "chris", [True, ["shadrach", "John",78], 90.66]]
+last_item = sequence[-1]
+nested_item = last_item[1]
+last_item_of_nested_list = nested_item[-1]
+print(last_item_of_nested_list)
+print(nested_item)
+print(last_item)
+print(sequence[-1][1][-1])
