@@ -67,3 +67,17 @@ print(cart_copy)  # ['Macbook', 'airpod', 'toilet paper',
 print(cart_copy.index("toilet paper"))  # 2
 print(cart_copy.index("eggs"))          # 4
 #insert() method
+cart_copy.insert(2, "hand sanitizer")
+print(cart_copy)  # ['Macbook', 'airpod', 'hand sanitizer', 'toilet paper', 'baking powder', 'eggs', 'milk']
+#pop() method
+popped_item = cart_copy.pop()
+print(popped_item)
+#remove() method
+cart_copy.remove("hand sanitizer")
+print(cart_copy)  # ['Macbook', 'airpod', 'toilet paper', 'baking powder', 'eggs', 'milk']
+#reverse() method
+cart_copy.reverse()
+print(cart_copy)  # ['milk', 'eggs', 'baking powder', 'toilet paper', 'hand sanitizer', 'airpod', 'Macbook']
+#sort() method
+cart_copy.sort()
+print(cart_copy)  # ['Macbook', 'airpod', 'baking powder', 'eggs', 'hand sanitizer', 'milk', 'toilet paper']
